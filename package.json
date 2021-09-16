@@ -5,7 +5,9 @@
   "type": "commonjs",
   "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest",
+    "test:watch": "jest --watch --detectOpenHandles"
   },
   "dependencies": {
     "debug": "~2.6.9",
@@ -13,5 +15,9 @@
     "express": "~4.16.1",
     "morgan": "~1.9.1",
     "node-fetch": "^2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.2.0",
+    "supertest": "^6.1.6"
   }
 }
